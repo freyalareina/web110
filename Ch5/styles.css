@@ -1,0 +1,61 @@
+
+/* styles.css */
+nav {
+    height: 35px;
+    background-color: #00602b;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav a {
+    color: white; /* Change text color for visibility */
+    background-color: transparent;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #000;
+    color: #fff;
+}
+
+nav a:visited {
+    color: #ffffff;
+    background-color: transparent;
+}
+/* Main Content */
+main {
+    font-weight: bold;
+    background-image: url('background.webp');
+    background-repeat: repeat-x;
+    padding: 20px;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 90%;
+}
+
+/* Headers */
+h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Footer */
+footer {
+    background-color: #8b1010;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
