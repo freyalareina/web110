@@ -1,0 +1,133 @@
+/* Taylor | March 2025 | styles.css */
+
+/* ===== Global Layout ===== */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 800px;
+  font-family: 'Faculty Glyphic', serif;
+  line-height: 1.6;
+  background-color: #fce4ec; /* powder pink */
+  color: #7a0026; /* deep cranberry */
+}
+
+/* ===== Section Styling ===== */
+header, nav, main, footer {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #ffd4b2; /* muted tangerine */
+  border: 1px solid #e2b893;
+}
+
+/* ===== Header with Image ===== */
+.header-with-image {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.header-with-image img.header-art {
+  height: 180px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+  color: #7a0026;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+}
+
+nav a,
+a {
+  text-decoration: none;
+  color: #b57edc; /* lavender */
+  font-weight: bold;
+}
+
+/* ===== Link Hover Effect ===== */
+nav a:hover,
+a:hover {
+  color: #ff6600; /* hot orange on hover */
+  text-decoration: underline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7a0026;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Lists ===== */
+ul, ol {
+  margin-left: 1.2em;
+}
+
+/* ===== Images and Figures ===== */
+figure {
+  margin-bottom: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+}
+
+/* ===== Footer ===== */
+footer {
+  font-size: 0.9em;
+  text-align: center;
+  color: #7a0026;
+}
+
+/* ===== Inspiration Figure Styling ===== */
+figure.inspiration {
+  border: 1px solid #e2b893;
+  padding: 1em;
+  background-color: #fff9f9;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2em;
+}
+
+figure.inspiration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+figure.inspiration figcaption {
+  margin-top: 0.5em;
+  font-style: italic;
+  color: #7a0026;
+}
+
+/* ===== Inspiration Row (Side-by-Side Layout) ===== */
+.inspiration-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: space-between;
+}
+
+.inspiration-row .inspiration {
+  flex: 1 1 45%;
+}
