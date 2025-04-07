@@ -1,0 +1,70 @@
+/* Taylor Swank - April 6, 2025 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #d32f2f; /* red */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+  }
+  
+  /* Navigation bar */
+  nav {
+    background-color: #fdd835; /* yellow */
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Welcome headline */
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Main layout */
+  main {
+    padding: 20px;
+  }
+  
+  /* Float sections side by side */
+  section {
+    width: 45%;
+    float: left;
+    margin: 2.5%;
+  }
+  
+  /* Image styling */
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    clear: both;
+    margin-top: 30px;
+  }
