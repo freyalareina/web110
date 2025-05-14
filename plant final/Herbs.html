@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- herbs.html – Taylor Swank – Final Project – May 2025 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herbs & Succulents</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* 1. Box styling for intro */
+    .intro-box {
+      background-color: #fff8f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    /* 2. Flex grid layout */
+    .plant-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .plant-item {
+      flex: 1 1 calc(33% - 20px);
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }
+
+    .plant-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .plant-item h3 {
+      margin: 10px 15px 0;
+      font-size: 1.2em;
+      color: #2a482a;
+    }
+
+    .plant-item ol {
+      margin: 10px 20px 20px;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .plant-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Planta Hermosa</h1>
+      <img src="taylor_tree.jpeg" alt="Taylor's tree logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="annuals.html">Annuals</a></li>
+          <li><a href="perennials.html">Perennials</a></li>
+          <li><a href="herbs.html">Herbs & Succulents</a></li>
+          <li><a href="watercare.html">Water Care</a></li>
+          <li><a href="form.html">Join Us</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="intro-box">
+        <p>This page highlights aromatic herbs and sculptural succulents. These five plants add fragrance, beauty, and resilience to your garden or windowsill. They're low-maintenance, unique, and each has its own character. Here's what they need to thrive.</p>
+      </div>
+
+      <div class="plant-flex">
+        <!-- French Lavender -->
+        <div class="plant-item">
+          <img src="lavender.jpeg" alt="French Lavender" />
+          <h3>French Lavender</h3>
+          <ol>
+            <li>Sunlight: Full sun, 6-8 hrs</li>
+            <li>Soil: Sandy, well-draining</li>
+            <li>Water: Let dry out between waterings</li>
+            <li>Fertilizer: Rarely needed</li>
+            <li>Pruning: Light trim after bloom</li>
+            <li>Cold: Tender perennial in 6a</li>
+            <li>Pests: Root rot if overwatered</li>
+          </ol>
+        </div>
+
+        <!-- Mojito Mint -->
+        <div class="plant-item">
+          <img src="mint.jpeg" alt="Mojito Mint" />
+          <h3>Mojito Mint</h3>
+          <ol>
+            <li>Sunlight: Full to part sun</li>
+            <li>Soil: Moist, rich soil</li>
+            <li>Water: Keep evenly moist</li>
+            <li>Fertilizer: Monthly light feed</li>
+            <li>Trim regularly to maintain shape—and to have fresh sprigs ready for your next mojito.</li>
+            <li>Cold: Hardy perennial</li>
+            <li>Pests: Aphids, whiteflies</li>
+          </ol>
+        </div>
+
+        <!-- String of Pearls -->
+        <div class="plant-item">
+          <img src="pearls.jpeg" alt="String of Pearls" />
+          <h3>String of Pearls</h3>
+          <ol>
+            <li>Sunlight: Bright indirect</li>
+            <li>Soil: Cactus/succulent mix</li>
+            <li>Water: Low; let dry fully</li>
+            <li>Fertilizer: Once/month in spring/summer</li>
+            <li>Pruning: Trim vines as needed</li>
+            <li>Cold: Bring indoors for winter</li>
+            <li>Pests: Mealybugs if overwatered</li>
+          </ol>
+        </div>
+
+        <!-- Gollum Jade -->
+        <div class="plant-item">
+          <img src="jade.jpeg" alt="Gollum Jade" />
+          <h3>Gollum Jade</h3>
+          <ol>
+            <li>Sunlight: Full sun</li>
+            <li>Soil: Sandy, cactus soil</li>
+            <li>Water: Very low needs</li>
+            <li>Fertilizer: Monthly in summer</li>
+            <li>Pruning: Pinch tips to shape</li>
+            <li>Cold: Not frost-hardy</li>
+            <li>Pests: Rare; watch for rot</li>
+          </ol>
+        </div>
+
+        <!-- Fairy Castle Cactus -->
+        <div class="plant-item">
+          <img src="cactus.jpeg" alt="Fairy Castle Cactus" />
+          <h3>Fairy Castle Cactus</h3>
+          <ol>
+            <li>Sunlight: Full sun</li>
+            <li>Soil: Fast-draining, dry soil</li>
+            <li>Water: Once every 2–3 weeks</li>
+            <li>Fertilizer: Only during active growth</li>
+            <li>Pruning: Rarely needed</li>
+            <li>Cold: Not cold tolerant</li>
+            <li>Pests: Watch for scale, rot</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Taylor Swank. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

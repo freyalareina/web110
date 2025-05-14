@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- form.html - Taylor Swank - Final Project - May 2025 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Embedded styling for form page */
+    form {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #3d653d;
+      color: white;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #2a482a;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Planta Hermosa</h1>
+      <img src="taylor_tree.jpeg" alt="Taylor's tree logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="annuals.html">Annuals</a></li>
+          <li><a href="perennials.html">Perennials</a></li>
+          <li><a href="herbs.html">Herbs & Succulents</a></li>
+          <li><a href="watercare.html">Water Care</a></li>
+          <li><a href="form.html">Join Us</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="intro-box">
+        <p>This short quiz is just for fun — based on the care info included throughout the site. Let’s see what you’ve learned 🌱</p>
+      </div>
+
+      <form action="#" method="post">
+        <label for="name">1. What’s your name?</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="plant">2. What’s your favorite plant from this site?</label>
+        <select id="plant" name="plant">
+          <option value="">--Choose one--</option>
+          <option value="calibrachoa">Calibrachoa</option>
+          <option value="gazania">Gazania</option>
+          <option value="marigold">African Marigold</option>
+          <option value="dahlia">Dahlia</option>
+          <option value="fuchsia">Fuchsia</option>
+          <option value="iris">Siberian Iris</option>
+          <option value="phlox">Creeping Phlox</option>
+          <option value="peony">Peony</option>
+          <option value="clematis">Clematis</option>
+          <option value="rose">Shrub Rose</option>
+          <option value="lavender">French Lavender</option>
+          <option value="mint">Mojito Mint</option>
+          <option value="pearls">String of Pearls</option>
+          <option value="jade">Gollum Jade</option>
+          <option value="cactus">Fairy Castle Cactus</option>
+        </select>
+
+        <fieldset>
+          <legend>3. How often should you water succulents?</legend>
+          <input type="radio" id="daily" name="succulent-water" value="daily">
+          <label for="daily">Daily</label><br>
+          <input type="radio" id="weekly" name="succulent-water" value="weekly">
+          <label for="weekly">Weekly</label><br>
+          <input type="radio" id="dry" name="succulent-water" value="when-dry">
+          <label for="dry">Only when soil is completely dry</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. Which of the following are drought-tolerant? (Check all that apply)</legend>
+          <input type="checkbox" id="gazania" name="drought[]" value="gazania">
+          <label for="gazania">Gazania</label><br>
+          <input type="checkbox" id="mintbox" name="drought[]" value="mint">
+          <label for="mintbox">Mint</label><br>
+          <input type="checkbox" id="cactus" name="drought[]" value="cactus">
+          <label for="cactus">Fairy Castle Cactus</label><br>
+          <input type="checkbox" id="fuchsia" name="drought[]" value="fuchsia">
+          <label for="fuchsia">Fuchsia</label>
+        </fieldset>
+
+        <label for="garden-date">5. When did you last plant something?</label>
+        <input type="date" id="garden-date" name="garden-date">
+
+        <label for="notes">6. Any plant confessions or questions for Taylor?</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Be honest — this is a safe garden space."></textarea>
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Taylor Swank. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
