@@ -4,54 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plant Care Quiz</title>
-
-  <!-- Embedded CSS just for the form page -->
+  <title>Join Us</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      background-color: #fce4ec;
-      font-family: Arial, sans-serif;
-      color: #333;
-    }
-
-    #wrapper {
-      width: 90%;
-      max-width: 800px;
-      margin: 0 auto;
+    /* Embedded styling for form page */
+    form {
+      max-width: 700px;
+      margin: 0 auto 40px;
       padding: 20px;
       background-color: #fff;
       border-radius: 10px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #2e7d32;
-    }
-
-    .logo {
-      width: 110px;
-      height: 110px;
-      object-fit: cover;
-      border-radius: 50%;
-      display: block;
-      margin: 15px auto;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-      border: 2px solid #4CAF50;
-      background-color: #fff;
-      padding: 5px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-top: 20px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
     }
 
     label {
-      font-weight: bold;
       display: block;
-      margin-bottom: 6px;
+      margin-top: 15px;
+      font-weight: bold;
     }
 
     input[type="text"],
@@ -60,47 +29,32 @@
     textarea {
       width: 100%;
       padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      font-size: 1em;
     }
 
-    fieldset {
-      border: none;
-      padding: 0;
-    }
-
-    legend {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .button-group {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      margin-top: 20px;
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
     }
 
     input[type="submit"],
     input[type="reset"] {
+      margin-top: 20px;
       padding: 10px 20px;
-      background-color: #81916b;
-      color: white;
       border: none;
-      border-radius: 6px;
+      background-color: #3d653d;
+      color: white;
+      border-radius: 5px;
+      font-size: 1em;
       cursor: pointer;
     }
 
     input[type="submit"]:hover,
     input[type="reset"]:hover {
-      background-color: #5c684a;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #666;
+      background-color: #2a482a;
     }
   </style>
 </head>
@@ -108,11 +62,26 @@
 <body>
   <div id="wrapper">
     <header>
-      <h1>Plant Care Pop Quiz</h1>
-      <img src="taylor_tree.jpeg" alt="Taylor's tree logo" class="logo">
+      <h1>Planta Hermosa</h1>
+      <img src="taylor_tree.jpeg" alt="Taylor's tree logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="annuals.html">Annuals</a></li>
+          <li><a href="perennials.html">Perennials</a></li>
+          <li><a href="herbs.html">Herbs & Succulents</a></li>
+          <li><a href="watercare.html">Water Care</a></li>
+          <li><a href="form.html">Join Us</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <div class="intro-box">
+        <p>This short quiz is just for fun — based on the care info included throughout the site. Let’s see what you’ve learned 🌱</p>
+      </div>
+
       <form action="#" method="post">
         <label for="name">1. What’s your name?</label>
         <input type="text" id="name" name="name" required>
@@ -165,10 +134,8 @@
         <label for="notes">6. Any plant confessions or questions for Taylor?</label>
         <textarea id="notes" name="notes" rows="4" placeholder="Be honest — this is a safe garden space."></textarea>
 
-        <div class="button-group">
-          <input type="submit" value="Submit">
-          <input type="reset" value="Reset">
-        </div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
       </form>
     </main>
 
