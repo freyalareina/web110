@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- index.html - Taylor Swank - Final Project - May 2025 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .intro-box {
+      background-color: #fff8f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    .plant-entry a.button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #81916b;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .plant-entry a.button-link:hover {
+      background-color: #5c684a;
+    }
+
+    table tbody tr:nth-child(even) {
+      background-color: #fdf4f5;
+    }
+
+    table tbody tr:nth-child(odd) {
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Planta Hermosa</h1>
+      <img src="taylor_tree.jpeg" alt="Taylor's tree logo" class="logo">
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="annuals.html">Annuals</a></li>
+          <li><a href="perennials.html">Perennials</a></li>
+          <li><a href="herbs.html">Herbs & Succulents</a></li>
+          <li><a href="watercare.html">Water Care</a></li>
+          <li><a href="form.html">Join Us</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="intro-box">
+        <p>Hello and welcome to my plant guide. Everything on this site comes from personal experience. You'll find care tips for annuals, perennials, herbs, and succulents. I've included a simple table below for quick comparisons. Whether you're new to gardening or just looking for friendly reminders, I hope this helps you grow confidently.</p>
+      </div>
+
+      <h2 style="text-align: center;">Explore Plant Types</h2>
+      <div class="flex-plant-grid">
+        <!-- Annuals -->
+        <section class="plant-entry">
+          <h3>Annuals</h3>
+          <p>Bright, bold plants that bloom for one season. Great for instant impact in containers and beds.</p>
+          <a href="annuals.html" class="button-link">View Annuals</a>
+        </section>
+
+        <!-- Perennials -->
+        <section class="plant-entry">
+          <h3>Perennials</h3>
+          <p>Reliable, returning favorites. These plants come back year after year when properly cared for.</p>
+          <a href="perennials.html" class="button-link">View Perennials</a>
+        </section>
+
+        <!-- Herbs -->
+        <section class="plant-entry">
+          <h3>Herbs & Succulents</h3>
+          <p>Low-maintenance options that thrive in containers. Aromatic herbs and sculptural succulents both included.</p>
+          <a href="herbs.html" class="button-link">View Herbs</a>
+        </section>
+      </div>
+
+      <h2 style="margin-top: 40px;">Quick Plant Reference</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plant</th>
+            <th>Genus</th>
+            <th>Sunlight</th>
+            <th>Soil</th>
+            <th>Water</th>
+            <th>Zone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Calibrachoa</td><td>Calibrachoa</td><td>Full sun</td><td>Well-draining, acidic</td><td>Moderate</td><td>Annual in 6a</td></tr>
+          <tr><td>Gazania</td><td>Gazania</td><td>Full sun</td><td>Sandy, dry</td><td>Low</td><td>Annual in 6a</td></tr>
+          <tr><td>African Marigold</td><td>Tagetes</td><td>Full sun</td><td>Average, well-draining</td><td>Moderate</td><td>Annual</td></tr>
+          <tr><td>Dahlia</td><td>Dahlia</td><td>Full sun</td><td>Rich, composted</td><td>Moderate</td><td>Annual in 6a</td></tr>
+          <tr><td>Fuchsia</td><td>Fuchsia</td><td>Bright shade</td><td>Moist, rich</td><td>High</td><td>Annual in 6a</td></tr>
+          <tr><td>Siberian Iris</td><td>Iris sibirica</td><td>Full sun</td><td>Moist, acidic</td><td>Moderate</td><td>Perennial</td></tr>
+          <tr><td>Creeping Phlox</td><td>Phlox subulata</td><td>Full sun</td><td>Well-draining</td><td>Low</td><td>Perennial</td></tr>
+          <tr><td>Peony</td><td>Paeonia</td><td>Full sun</td><td>Rich, loamy</td><td>Moderate</td><td>Perennial</td></tr>
+          <tr><td>Clematis</td><td>Clematis</td><td>Full sun/top, shade/root</td><td>Neutral, well-drained</td><td>Moderate</td><td>Perennial</td></tr>
+          <tr><td>Shrub Rose</td><td>Rosa</td><td>Full sun</td><td>Loamy, composted</td><td>Moderate</td><td>Perennial</td></tr>
+          <tr><td>French Lavender</td><td>Lavandula</td><td>Full sun</td><td>Sandy, dry</td><td>Low</td><td>Perennial in 6a (borderline)</td></tr>
+          <tr><td>Mojito Mint</td><td>Mentha</td><td>Full-part sun</td><td>Moist, rich</td><td>High</td><td>Perennial</td></tr>
+          <tr><td>String of Pearls</td><td>Senecio</td><td>Bright indirect</td><td>Cactus/succulent</td><td>Low</td><td>Annual in 6a</td></tr>
+          <tr><td>Gollum Jade</td><td>Crassula ovata</td><td>Full sun</td><td>Cactus/succulent</td><td>Low</td><td>Annual in 6a</td></tr>
+          <tr><td>Fairy Castle Cactus</td><td>Acanthocereus</td><td>Full sun</td><td>Dry, sandy</td><td>Very low</td><td>Annual in 6a</td></tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Taylor Swank. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
