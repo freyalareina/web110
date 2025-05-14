@@ -1,142 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Care</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      body {
-        background-color: #fbe4ea;
-        font-family: Arial, sans-serif;
-        margin: 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Care</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="pink-background">
+  <header>
+    <img src="wave.jpg" alt="The Great Wave by Hokusai" class="hero-image" />
+    <h1>Planta Hermosa</h1>
+    <img src="taylor_tree.jpeg" alt="Tree Logo" class="logo" />
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="annuals.html">Annuals</a></li>
+        <li><a href="perennials.html">Perennials</a></li>
+        <li><a href="herbs.html">Herbs & Succulents</a></li>
+        <li><a class="active" href="watercare.html">Water Care</a></li>
+        <li><a href="form.html">Join Us</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      header img.hero {
-        width: 100%;
-        max-height: 250px;
-        object-fit: cover;
-        display: block;
-      }
-
-      .navbar {
-        background-color: #a8b78c;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0.5em;
-        border-radius: 10px;
-        margin: 1em;
-      }
-
-      .navbar a {
-        text-decoration: none;
-        color: white;
-        background-color: #7d8c5f;
-        padding: 0.5em 1em;
-        margin: 0.2em;
-        border-radius: 8px;
-        font-weight: bold;
-      }
-
-      h1, h2 {
-        text-align: center;
-        color: #2e7d32;
-      }
-
-      .content {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 1em;
-      }
-
-      .content p {
-        font-size: 1.1em;
-        line-height: 1.6;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 2em;
-        background-color: #ffffff;
-      }
-
-      th, td {
-        border: 1px solid #ddd;
-        padding: 0.75em;
-        text-align: left;
-      }
-
-      th {
-        background-color: #d0ebeb;
-        font-weight: bold;
-      }
-
-      @media screen and (max-width: 768px) {
-        table, thead, tbody, th, td, tr {
-          display: block;
-        }
-
-        thead {
-          display: none;
-        }
-
-        td {
-          position: relative;
-          padding-left: 50%;
-          border: none;
-          border-bottom: 1px solid #ccc;
-        }
-
-        td::before {
-          position: absolute;
-          top: 0.75em;
-          left: 1em;
-          width: 45%;
-          white-space: nowrap;
-          font-weight: bold;
-        }
-
-        td:nth-of-type(1)::before { content: "Plant"; }
-        td:nth-of-type(2)::before { content: "Water Needs"; }
-        td:nth-of-type(3)::before { content: "Method"; }
-        td:nth-of-type(4)::before { content: "Notes / Timing"; }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="wave.jpg" alt="The Great Wave off Kanagawa" class="hero">
-      <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="annuals.html">Annuals</a>
-        <a href="perennials.html">Perennials</a>
-        <a href="herbs.html">Herbs & Succulents</a>
-        <a href="watercare.html">Water Care</a>
-        <a href="form.html">Join Us</a>
-        <a href="credits.html">Credits</a>
-      </nav>
-    </header>
-
-    <main class="content">
-      <h1>Water Care</h1>
+  <main>
+    <section class="intro-box">
+      <h2>Water Care</h2>
       <p>
-        Water is essential for growing healthy, thriving plants, but it's more nuanced than it seems.
+        Water is essential for growing healthy, thriving plants—but it’s more nuanced than it seems.
         Just like people, different plants have their own preferences. Rex begonias, impatiens, and
-        tomatoes are heavy drinkers, while purslane, lantana, and geraniums do better when their
-        soil dries out a bit between waterings.
+        tomatoes are heavy drinkers, while purslane, lantana, and geraniums do better when their soil
+        dries out a bit between waterings.
       </p>
       <p>
-        Water deeply and infrequently. Most well-meaning plant lovers accidentally kill their
-        plants by overwatering. Watch for yellow, wilted leaves, crepey brown edges, mushy stems,
-        or mold on the soil. These are signs of root rot. It means your plant has drowned. Plants
-        need to breathe (just like us!), and oxygen must move through their roots and out their
-        leaves. Proper watering is only part of the equation -airflow is essential to help them
-        thrive.
+        Water deeply and infrequently. Most well-meaning plant lovers accidentally kill their plants by
+        overwatering. Watch for yellow, wilted leaves, crepey brown edges, mushy stems, or mold on the
+        soil—these are signs of root rot. It means your plant has drowned. Plants need to breathe (just
+        like us!), and oxygen must move through their roots and out their leaves. Proper watering is
+        only part of the equation—airflow is essential to help them thrive.
       </p>
+    </section>
 
-      <h2>Watering Care by Plant</h2>
+    <h3>Watering Care by Plant</h3>
+
+    <div class="table-container">
       <table>
         <thead>
           <tr>
@@ -147,99 +55,28 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Calibrachoa</td>
-            <td>Moderate</td>
-            <td>Deep, when top inch is dry</td>
-            <td>Keep moist in containers</td>
-          </tr>
-          <tr>
-            <td>Gazania</td>
-            <td>Low</td>
-            <td>Deep, infrequent</td>
-            <td>Let soil dry between waterings</td>
-          </tr>
-          <tr>
-            <td>African Marigold</td>
-            <td>Low</td>
-            <td>Base watering only</td>
-            <td>Dislikes soggy roots</td>
-          </tr>
-          <tr>
-            <td>Dahlia</td>
-            <td>Moderate</td>
-            <td>Deep, avoid crown</td>
-            <td>More frequent once buds appear</td>
-          </tr>
-          <tr>
-            <td>Fuchsia</td>
-            <td>High</td>
-            <td>Consistent moisture</td>
-            <td>Daily watering in summer heat</td>
-          </tr>
-          <tr>
-            <td>Iris</td>
-            <td>Moderate</td>
-            <td>Even moisture in first year</td>
-            <td>More tolerant once established</td>
-          </tr>
-          <tr>
-            <td>Phlox</td>
-            <td>Low</td>
-            <td>Occasional deep watering</td>
-            <td>Avoid overhead watering</td>
-          </tr>
-          <tr>
-            <td>Peony</td>
-            <td>Moderate</td>
-            <td>Even watering</td>
-            <td>Keep soil well-drained</td>
-          </tr>
-          <tr>
-            <td>Clematis</td>
-            <td>Moderate</td>
-            <td>Deep watering</td>
-            <td>Keep roots cool and shaded</td>
-          </tr>
-          <tr>
-            <td>Shrub Rose</td>
-            <td>Moderate</td>
-            <td>Base watering</td>
-            <td>Avoid wetting leaves</td>
-          </tr>
-          <tr>
-            <td>Lavender</td>
-            <td>Low</td>
-            <td>Let soil dry between</td>
-            <td>Hates wet roots</td>
-          </tr>
-          <tr>
-            <td>Mint</td>
-            <td>High</td>
-            <td>Evenly moist soil</td>
-            <td>Container plants dry quickly</td>
-          </tr>
-          <tr>
-            <td>String of Pearls</td>
-            <td>Low</td>
-            <td>Sparse watering</td>
-            <td>Let soil dry completely</td>
-          </tr>
-          <tr>
-            <td>Gollum Jade</td>
-            <td>Low</td>
-            <td>Deep but infrequent</td>
-            <td>Needs dry intervals</td>
-          </tr>
-          <tr>
-            <td>Fairy Castle Cactus</td>
-            <td>Very Low</td>
-            <td>Soak and dry</td>
-            <td>Water sparingly in winter</td>
-          </tr>
+          <tr><td>Calibrachoa</td><td>Consistent</td><td>Water when top inch is dry</td><td>Keep moist in containers</td></tr>
+          <tr><td>Gazania</td><td>Low</td><td>Deep and infrequent</td><td>Let soil dry between waterings</td></tr>
+          <tr><td>African Marigold</td><td>Low</td><td>Base watering only</td><td>Allow soil to dry between</td></tr>
+          <tr><td>Dahlia</td><td>Moderate</td><td>Deep soak</td><td>Don’t water crown</td></tr>
+          <tr><td>Fuchsia</td><td>High</td><td>Frequent watering</td><td>Needs moist soil in pots</td></tr>
+          <tr><td>Siberian Iris</td><td>Moderate</td><td>Even moisture</td><td>Drought-tolerant once established</td></tr>
+          <tr><td>Creeping Phlox</td><td>Low</td><td>As needed</td><td>Don’t let sit in wet soil</td></tr>
+          <tr><td>Peony</td><td>Moderate</td><td>Deep watering</td><td>Let soil dry a bit</td></tr>
+          <tr><td>Clematis</td><td>Moderate</td><td>Consistent watering</td><td>Mulch helps retain moisture</td></tr>
+          <tr><td>Shrub Rose</td><td>Moderate</td><td>Deep soak</td><td>1x/week in dry weather</td></tr>
+          <tr><td>French Lavender</td><td>Low</td><td>Let dry out between</td><td>Great drainage = key</td></tr>
+          <tr><td>Mojito Mint</td><td>High</td><td>Keep evenly moist</td><td>Water at base if possible</td></tr>
+          <tr><td>String of Pearls</td><td>Low</td><td>Sparse watering</td><td>Let fully dry out</td></tr>
+          <tr><td>Gollum Jade</td><td>Low</td><td>Light soak</td><td>Infrequent watering only</td></tr>
+          <tr><td>Fairy Castle Cactus</td><td>Very Low</td><td>Minimal water</td><td>Every 3–4 weeks or less</td></tr>
         </tbody>
       </table>
-    </main>
-  </body>
-</html>
+    </div>
+  </main>
 
+  <footer>
+    <p>&copy; 2025 Taylor Swank</p>
+  </footer>
+</body>
+</html>
